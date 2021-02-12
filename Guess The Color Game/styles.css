@@ -1,0 +1,30 @@
+.colorBlock {
+    border-radius: 25px;
+    max-height: 100%;
+    background: yellow;
+    padding:20px;
+    margin: 0px;
+    max-width: 100%;
+    height:150px;
+    color:white
+}
+
+@-webkit-keyframes rainbow{
+    0%{color: purple;}
+    16%{color: red;}	
+    33%{color: orange;}	
+    49%{color: yellow;}
+    66%{color: orange;}
+    82%{color: red;}
+    100%{color: purple;}
+  }
+
+  .rainbow {
+  
+    /* Font options */
+   text-shadow: 2px 2px 4px #000000;
+   font-size:40px;
+   
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 2s infinite; 
+ }

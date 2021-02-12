@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <title>Vanilla Javascript Stopwatch</title>
+  </head>
+  <body class="bg-warning text-uppercase" style="font-family: 'Roboto Mono', monospace;">
+    <div class="container mx-auto">
+      <h1 class="text-center mt-3 p-3 bg-dark" style="color: white">
+        Stopwatch
+      </h1>
+      <h1
+        id="stop-watch-text"
+        style="font-size: 64px"
+        class="text-center py-5 bg-white"
+      >
+        00:00:00
+      </h1>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 p-1">
+            <button type="button" class="btn btn-dark btn-block" onclick="toggleStopWatch()">Start/Stop</button>
+          </div>
+          <div class="col-4 p-1">
+            <button type="button" class="btn btn-dark btn-block" onclick="triggerLap()">Lap</button>
+          </div>
+          <div class="col-4 p-1">
+            <button type="button" class="btn btn-dark btn-block" onclick="resetStopWatch()">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="list-group" id="lap-list">
+      </ul>
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js"></script>
+</head>
+<body onload="onSelectNewColors()">
+
+    <div class="container-fluid bg-info text-white py-1">
+        <div class="jumbotron">
+          <h3 class="text-center rainbow" style="font-size:48px;">The Great Color</h4>
+          <h1 id="color-text" class="text-center" style="font-size:64px;">RGB(38, 165, 105)</h1>
+          <h3 class="text-center rainbow" style="font-size:48px;">Guessing Game</h4>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-expand-md">
+        <div class="container py-0 my-0">
+            <ul class="nav navbar-nav my-auto">
+                <li><button onclick="onSelectNewColors()" class="btn btn-outline-dark navbar-btn px-3 mx-1">New Colors</button></li>
+                <li><h2 id="user-message" class="my-auto px-3" style="line-height:1;"></h2></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right my-auto">
+                <li><h2 id="score-text" class="my-auto px-3" style="line-height:1;">Score: 0/0</h2> </li>
+                <li><button id="easy-button" onclick="selectEasyDifficulty()" class="active btn btn-outline-dark navbar-btn px-3 mx-1">Easy</button></li>
+                <li><button id="hard-button" onclick="selectHardDifficulty()" class="btn btn-outline-dark navbar-btn px-3 mx-1">Hard</button></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid bg-dark">
+        <div id="colorContainer" class="container py-4 h-100">
+
+            <div class="row justify-content-center pb-3" style="height:300px;">
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block1.1"onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block1.2" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block1.3" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block1.4" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-3" style="height:300px;">
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block2.1" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block2.2" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block2.3" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+                <div class=" h-100 col-sm-3 d-flex justify-content-center">
+                    <a id="block2.4" onclick="guess(this.id)" class="w-100 h-100 colorBlock"></a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+</html>
